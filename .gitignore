@@ -1,4 +1,5 @@
-dist
+# JRQ-DEBUG: temporarily publishing dist to avoid need of npm fork
+#dist
 node_modules
 docs
 .nyc_output
