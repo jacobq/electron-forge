@@ -1,6 +1,6 @@
 import debug from 'debug';
 import fs from 'fs-extra';
-import isExactVersion from 'exact-version';
+import { isExactVersion } from 'is-exact-version';
 import path from 'path';
 import readPackageJSON from './read-package-json';
 
