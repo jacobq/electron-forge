@@ -1,6 +1,6 @@
 {
   "name": "@jacobq/electron-forge",
-  "version": "5.2.4-jrq.1",
+  "version": "5.2.4-jrq.3",
   "description": "A complete tool for building modern Electron applications",
   "repository": "https://github.com/electron-userland/electron-forge",
   "main": "dist/api/index.js",
@@ -118,7 +118,7 @@
     "electron-forge-template-react": "^1.0.2",
     "electron-forge-template-react-typescript": "^1.0.3",
     "electron-forge-template-vue": "^1.0.2",
-    "electron-packager": "^13.0.0",
+    "electron-packager": "jacobq/electron-packager#bdf7bd200facd28fd60bb16abce5e3839496ad26",
     "electron-rebuild": "^1.6.0",
     "exact-version": "^1.0.1",
     "form-data": "^2.1.4",
