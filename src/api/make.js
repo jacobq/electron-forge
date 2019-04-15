@@ -1,7 +1,7 @@
 import 'colors';
 import fs from 'fs-extra';
 import path from 'path';
-import { hostArch } from 'electron-packager/targets';
+import { host as hostArch } from 'electron-download/lib/arch';
 
 import asyncOra from '../util/ora-handler';
 import getElectronVersion from '../util/get-electron-version';

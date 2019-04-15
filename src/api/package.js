@@ -5,7 +5,7 @@ import glob from 'glob';
 import path from 'path';
 import pify from 'pify';
 import packager from 'electron-packager';
-import { hostArch } from 'electron-packager/targets';
+import { host as hostArch } from 'electron-download/lib/arch';
 
 import getForgeConfig from '../util/forge-config';
 import getElectronVersion from '../util/get-electron-version';
@@ -161,6 +161,10 @@ export default async (providedOptions = {}) => {
   if (!packageJSON.version && !packageOpts.appVersion) {
     // eslint-disable-next-line max-len
     warn(interactive, "Please set 'version' or 'config.forge.electronPackagerConfig.appVersion' in your application's package.json so auto-updates work properly".yellow);
+  }
+
+  if (packageOpts.prebuiltAsar) {
+    throw new Error('config.forge.packagerConfig.prebuiltAsar is not supported by Electron Forge');
   }
 
   await runHook(forgeConfig, 'generateAssets');
