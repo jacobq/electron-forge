@@ -1,4 +1,4 @@
-import { allOfficialArchsForPlatformAndVersion } from 'electron-packager/targets';
+import { allOfficialArchsForPlatformAndVersion } from 'electron-packager/src/targets';
 
 export default function parseArchs(platform, declaredArch, electronVersion) {
   if (declaredArch === 'all') {
